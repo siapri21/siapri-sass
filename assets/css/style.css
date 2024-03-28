@@ -1,0 +1,57 @@
+@import url(nav.css);
+@import url(scroll.css);
+@import url(anim.css);
+
+/* ::selection {
+  background: yellowgreen;
+  color: red;
+} */
+
+:root {
+  --j: rgb(0, 0, 0);
+  --px: 10px;
+  --g: grey;
+}
+
+section,
+section > div {
+  display: flex;
+}
+
+a[href="index.html"] {
+  color: turquoise;
+  font-size: 30px;
+}
+
+main {
+  background: var(--g);
+}
+
+section {
+  flex-wrap: wrap;
+  align-items: center;
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* article {
+  min-width: 320px;
+  flex: 1;
+  border: 1px solid black;
+  min-height: 60vh;
+} */
+
+@media screen and (orientation: portrait) {
+  header + section {
+    background: url(../img/new-york-1867569_640.jpg) center center no-repeat fixed;
+    background-size: cover;
+  }
+}
+
+@media screen and (orientation: landscape) {
+  header + section {
+    background: url(../img/bali-2975787_1280.jpg) center center no-repeat fixed;
+    background-size: cover;
+  }
+}

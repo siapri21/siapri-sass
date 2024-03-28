@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pos</title>
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        section{
+            width: 80%;
+            height: 300px;
+            background: #82ac15;
+            margin: 10% auto;
+            display: flex;
+        }
+
+        article{
+            width: 200px;
+            height: 500px;
+        }
+
+        section>article:first-child{
+            background: rgb(255, 89, 0);
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 20px;
+            z-index: 2;
+        }
+        section>article:nth-child(2){
+            background: blue;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 100px;
+            z-index: 6;
+        }
+
+        section>article:last-child{
+            background: goldenrod;
+            position: relative;
+            top: 0;
+            right: 0;
+        }
+
+    </style>
+</head>
+<body>
+    <section>
+        <article>absolue</article>
+        <article>relative</article>
+        <article>fixed</article>
+        <!-- <article></article> -->
+    </section>
+    
+</body>
+</html>

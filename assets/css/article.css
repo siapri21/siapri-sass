@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+header{
+    width: 100vw;
+    min-height: 10vh;
+    background: beige;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+article > header{
+    background: black;
+    min-height: 5vh;
+    display: inherit;
+    padding: 10px 0;
+}
+
+/* article > p,a{
+    color: #fff;
+} */
+
+article :is(p,a,h2){
+    color: #fff;
+}
+
+h2{
+    text-decoration: underline wavy white;
+    text-align: center;
+}
+
+section{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+article{
+    min-width: 280px;
+    flex: 1;
+    filter: drop-shadow(0px 5px 10px white);
+    padding: 10px;
+}
+
+main{
+    background: gray;
+}
+
+figure{
+    width: 100vw;
+    filter: grayscale(1);
+    transition: 0.5ss linear;
+
+}
+
+figure:hover{
+    filter: grayscale(0);
+}
+
+figure >img{
+    max-width: 100%;
+    min-width: 100%;
+}
+
+article > p {
+    text-align: center;
+    margin: 10px 0;
+}
+
+audio{
+    width: 100vw;
+    background: white;
+}
+
+article > a{
+    width: 100vw;
+    text-decoration: none;
+    height: 40px;
+    background: rgba(0, 0, 0, 0.151);
+    display: block;
+    text-align: center;
+    line-height: 40px;
+}
