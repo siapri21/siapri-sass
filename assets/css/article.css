@@ -20,11 +20,22 @@ article > header{
     min-height: 5vh;
     display: inherit;
     padding: 10px 0;
+    align-items: center;
 }
 
 /* article > p,a{
     color: #fff;
 } */
+article :is(header, footer){
+    background: black;
+    min-height: 5vh;
+    display: inherit;
+    padding: 10px 0;
+}
+
+article > footer{
+    margin-top: 2vh;
+}
 
 article :is(p,a,h2){
     color: #fff;
@@ -81,8 +92,9 @@ article > a{
     width: 100vw;
     text-decoration: none;
     height: 40px;
-    background: rgba(0, 0, 0, 0.151);
+    background: rgb(128, 85, 6);
     display: block;
     text-align: center;
     line-height: 40px;
+    margin-top:1vh ;
 }
