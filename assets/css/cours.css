@@ -1,0 +1,90 @@
+
+.bg-avril{
+    background: #d28e11;
+}
+
+main{
+    background: rebeccapurple;
+    min-width: 400px;
+}
+
+article{
+    border: 1px solid black;
+    min-height: 400px;
+}
+
+.issa{
+    position: fixed;
+    bottom: 25%;
+    left: 10%;
+    /* width: 100%; */
+    background: red;
+    width: 80%;
+    height: 50vh;
+    z-index: 10;
+    /* margin-left: 100px; */
+}
+
+header + section{
+    width: 100vw;
+    height: 95vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 10px;
+}
+
+header + section>p{
+    width: 30%;
+    color: white;
+    text-shadow: 1px 1px 5px black;
+    padding: 10px;
+
+    /* font-size: 1rem; */
+}
+
+/* section p{
+    font-size: 2rem;
+} */
+
+header+section>a{
+    display: block;
+    border: 2px double rgb(249, 163, 3);
+    background: transparent;
+    border-top-right-radius:10px ;
+    border-bottom-left-radius:10px ;
+    text-align: center;
+    width: 270px;
+    padding: 15px 0;
+    text-decoration: none;
+    color: #fff;
+    transition: .5s linear;
+}
+
+header + section >a:hover{
+    width: 200px;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 0;
+    border: 1px solid orange;
+}
+
+h1{
+    font-size: 6rem;
+    color: white;
+    text-shadow: 1px 1px 5px  black;
+}
+
+sup{
+    color: #d28e11;
+}
+
+#ordi{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    z-index: -1;
+    width: 100%;
+}
+
+
